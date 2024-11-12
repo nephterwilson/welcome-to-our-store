@@ -1,0 +1,71 @@
+
+/* Gradient Background Animation */
+body, .gradient-background {
+  background: linear-gradient(-45deg, #ff7e5f, #feb47b, #ff6b6b, #ffc371);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+  font-family: 'Arial', sans-serif;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Navbar Styling */
+.navbar {
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero Section Styling */
+header {
+  position: relative;
+  z-index: 1;
+}
+
+header h1,
+header p {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Product Cards */
+.card {
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  max-height: 200px;
+  object-fit: cover;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #343a40;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Social Media Link Styling */
+footer a {
+  color: #fff;
+}
+
+footer a:hover {
+  color: #ff7e5f;
+}
